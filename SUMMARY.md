@@ -1,6 +1,6 @@
 # Table of contents
 
-* [소개](README.md)
+* [InningLog](README.md)
 
 ## 인증 <a href="#auth" id="auth"></a>
 
