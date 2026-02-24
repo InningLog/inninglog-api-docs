@@ -4,11 +4,11 @@
 
 사용자의 직관 리포트 정보를 조회합니다. 총 직관 경기 수, 승률, 응원팀 시즌 승률, 직관 시 베스트/워스트 선수 순위를 제공합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /report/main`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,7 +26,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 별도의 Path Parameters, Query Parameters, Body가 필요하지 않습니다.
 
@@ -36,7 +36,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

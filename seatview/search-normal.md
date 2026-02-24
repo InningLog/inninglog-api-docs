@@ -4,11 +4,11 @@
 
 구장, 존, 구역, 열 조건으로 좌석시야를 검색합니다. Page 방식 페이지네이션을 사용합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /seatViews/normal/gallery`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,24 +26,24 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `stadiumShortCode` | String | 경기장 숏코드 (예: `JAM`) | ✅ |
-| `zoneShortCode` | String | 존 숏코드 (예: `JAM_BLUE`) | ⬜️ |
-| `section` | String | 구역 (예: `101`) | ⬜️ |
-| `seatRow` | String | 열 (예: `3`) | ⬜️ |
-| `page` | int | 페이지 번호 (0부터 시작) | ⬜️ |
-| `size` | int | 한 페이지 아이템 수 | ⬜️ |
+| `stadiumShortCode` | String | 경기장 숏코드 (예: `JAM`) | |
+| `zoneShortCode` | String | 존 숏코드 (예: `JAM_BLUE`) | |
+| `section` | String | 구역 (예: `101`) | |
+| `seatRow` | String | 열 (예: `3`) | |
+| `page` | int | 페이지 번호 (0부터 시작) | |
+| `size` | int | 한 페이지 아이템 수 | |
 
 > **검색 규칙:**
 > - `stadiumShortCode`는 필수입니다.
 > - `seatRow`만 단독으로 검색할 수 없습니다. 최소한 `zoneShortCode` 또는 `section`이 함께 필요합니다.
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /seatViews/normal/gallery?stadiumShortCode=JAM&zoneShortCode=JAM_BLUE&page=0&size=10
@@ -56,7 +56,7 @@ GET /seatViews/normal/gallery?stadiumShortCode=JAM&zoneShortCode=JAM_BLUE&sectio
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

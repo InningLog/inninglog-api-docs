@@ -4,11 +4,11 @@
 
 본인이 작성한 게시글을 수정합니다. 제목, 본문, 이미지를 변경할 수 있으며, 기존 이미지 유지/삭제와 새 이미지 추가가 가능합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `PATCH /community/posts/{postId}`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,8 +26,8 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -39,17 +39,17 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `title` | String | 게시글 제목 | ✅ |
-| `content` | String | 게시글 본문 | ✅ |
-| `remainImages` | Array | 기존 이미지 중 유지할 이미지 목록 | ⬜️ |
-| `remainImages[].remainImageId` | Long | 유지할 기존 이미지 ID | ✅ |
-| `remainImages[].sequence` | int | 수정 후 이미지 순서 | ✅ |
-| `newImages` | Array | 새로 추가할 이미지 목록 | ⬜️ |
-| `newImages[].sequence` | int | 이미지 순서 | ✅ |
-| `newImages[].key` | String | 이미지 S3 경로 키 | ✅ |
-| `imageCount` | Long | 전체 이미지 개수 (기존 유지 + 신규) | ⬜️ |
+| `title` | String | 게시글 제목 | |
+| `content` | String | 게시글 본문 | |
+| `remainImages` | Array | 기존 이미지 중 유지할 이미지 목록 | |
+| `remainImages[].remainImageId` | Long | 유지할 기존 이미지 ID | |
+| `remainImages[].sequence` | int | 수정 후 이미지 순서 | |
+| `newImages` | Array | 새로 추가할 이미지 목록 | |
+| `newImages[].sequence` | int | 이미지 순서 | |
+| `newImages[].key` | String | 이미지 S3 경로 키 | |
+| `imageCount` | Long | 전체 이미지 개수 (기존 유지 + 신규) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -77,7 +77,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

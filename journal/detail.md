@@ -4,11 +4,11 @@
 
 특정 직관일지의 상세 정보를 조회합니다. 경기 정보, 감정 태그, 후기, 좋아요/스크랩 상태를 포함합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /journals/detail/{journalId}`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,7 +26,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -34,7 +34,7 @@
 | --- | --- | --- |
 | `journalId` | Long | 조회할 직관일지의 고유 ID |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /journals/detail/42
@@ -46,7 +46,7 @@ GET /journals/detail/42
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

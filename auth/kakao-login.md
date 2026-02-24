@@ -4,17 +4,17 @@
 
 카카오 OAuth 로그인 페이지로 리다이렉트할 URL을 반환합니다. 클라이언트는 이 URL로 사용자를 이동시켜 카카오 로그인을 진행합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /login/page`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** 필요 없음
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -22,7 +22,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ⬜️ |
+| `Content-Type` | String | `application/json` | |
 
 별도의 Path Parameters, Query Parameters, Body가 필요하지 않습니다.
 
@@ -32,7 +32,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

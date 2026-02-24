@@ -4,11 +4,11 @@
 
 본인이 작성한 게시글을 삭제합니다. 게시글에 달린 댓글, 좋아요, 스크랩도 함께 삭제됩니다 (Hard Delete).
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `DELETE /community/posts/{postId}`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,7 +26,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -34,7 +34,7 @@
 | --- | --- | --- |
 | `postId` | Long | 삭제할 게시글 ID |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 DELETE /community/posts/10
@@ -46,7 +46,7 @@ DELETE /community/posts/10
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

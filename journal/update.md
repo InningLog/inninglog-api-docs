@@ -4,11 +4,11 @@
 
 기존 직관일지의 내용을 수정합니다. 점수, 감정 태그, 후기, 이미지, 공개 여부를 변경할 수 있습니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `PATCH /journals/update/{journalId}`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,8 +26,8 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -39,14 +39,14 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `ourScore` | int | 우리팀 점수 | ✅ |
-| `theirScore` | int | 상대팀 점수 | ✅ |
-| `media_url` | String | 이미지 파일명 (확장자 포함) | ⬜️ |
-| `emotion` | String | 감정 태그 | ✅ |
-| `review_text` | String | 후기글 | ⬜️ |
-| `isPublic` | boolean | 공개 여부 (기본값: `false`) | ⬜️ |
+| `ourScore` | int | 우리팀 점수 | |
+| `theirScore` | int | 상대팀 점수 | |
+| `media_url` | String | 이미지 파일명 (확장자 포함) | |
+| `emotion` | String | 감정 태그 | |
+| `review_text` | String | 후기글 | |
+| `isPublic` | boolean | 공개 여부 (기본값: `false`) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -65,7 +65,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

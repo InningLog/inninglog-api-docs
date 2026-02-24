@@ -4,11 +4,11 @@
 
 특정 날짜에 사용자 응원팀의 경기 일정을 조회합니다. 직관일지 작성 전 경기를 선택하기 위해 사용됩니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /journals/schedule`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,15 +26,15 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `gameDate` | String | 조회할 경기 날짜 (`yyyy-MM-dd`) | ✅ |
+| `gameDate` | String | 조회할 경기 날짜 (`yyyy-MM-dd`) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /journals/schedule?gameDate=2025-07-01
@@ -46,7 +46,7 @@ GET /journals/schedule?gameDate=2025-07-01
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

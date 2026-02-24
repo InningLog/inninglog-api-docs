@@ -4,11 +4,11 @@
 
 신규 가입 후 최초 1회 닉네임과 응원팀을 동시에 설정합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `POST /member/setup`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,17 +26,17 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Body
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `nickname` | String | 설정할 닉네임 | ✅ |
-| `teamShortCode` | String | 응원팀 숏코드 (예: `LG`, `OB`) | ✅ |
+| `nickname` | String | 설정할 닉네임 | |
+| `teamShortCode` | String | 응원팀 숏코드 (예: `LG`, `OB`) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -51,7 +51,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

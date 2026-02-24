@@ -4,11 +4,11 @@
 
 감정 태그(해시태그)를 기반으로 좌석시야를 검색합니다. 최소 1개, 최대 2개의 해시태그로 검색 가능하며, AND/OR 조건을 선택할 수 있습니다. Page 방식 페이지네이션을 사용합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /seatViews/hashtag/gallery`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,19 +26,19 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `stadiumShortCode` | String | 경기장 숏코드 (예: `JAM`) | ⬜️ |
-| `hashtagCodes` | List\<String\> | 해시태그 코드 (최소 1개, 최대 2개) | ✅ |
-| `isAndCondition` | Boolean | AND 조건 여부 (`true`: AND, `false`: OR, 기본값: `false`) | ⬜️ |
-| `page` | int | 페이지 번호 (0부터 시작) | ⬜️ |
-| `size` | int | 한 페이지 아이템 수 | ⬜️ |
+| `stadiumShortCode` | String | 경기장 숏코드 (예: `JAM`) | |
+| `hashtagCodes` | List\<String\> | 해시태그 코드 (최소 1개, 최대 2개) | |
+| `isAndCondition` | Boolean | AND 조건 여부 (`true`: AND, `false`: OR, 기본값: `false`) | |
+| `page` | int | 페이지 번호 (0부터 시작) | |
+| `size` | int | 한 페이지 아이템 수 | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /seatViews/hashtag/gallery?hashtagCodes=CHEERING_MOSTLY_STANDING&hashtagCodes=SUN_NONE&isAndCondition=true&page=0&size=10
@@ -51,7 +51,7 @@ GET /seatViews/hashtag/gallery?stadiumShortCode=JAM&hashtagCodes=CHEERING_MOSTLY
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

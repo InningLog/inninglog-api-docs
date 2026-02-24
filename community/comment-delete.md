@@ -4,11 +4,11 @@
 
 본인이 작성한 댓글을 삭제합니다. 소프트 삭제(Soft Delete) 방식으로 처리되어, 삭제된 댓글은 "삭제된 댓글입니다."로 표시됩니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `DELETE /community/comments/{commentId}`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,7 +26,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -34,7 +34,7 @@
 | --- | --- | --- |
 | `commentId` | Long | 삭제할 댓글 ID |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 DELETE /community/comments/5
@@ -46,7 +46,7 @@ DELETE /community/comments/5
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

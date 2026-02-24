@@ -4,11 +4,11 @@
 
 마이페이지에서 내가 댓글을 작성한 게시글 목록을 조회합니다. 무한 스크롤(Slice) 방식을 사용합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /community/posts/my/commented`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,14 +26,14 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `page` | int | 페이지 번호 (0부터 시작) | ⬜️ |
-| `size` | int | 한 페이지 아이템 수 | ⬜️ |
+| `page` | int | 페이지 번호 (0부터 시작) | |
+| `size` | int | 한 페이지 아이템 수 | |
 
 </aside>
 
@@ -41,7 +41,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

@@ -4,11 +4,11 @@
 
 본인의 직관일지를 캘린더 형태로 조회합니다. 경기 결과(WIN/LOSE/DRAW)로 필터링할 수 있습니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /journals/calendar`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,15 +26,15 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `resultScore` | String | 경기 결과 필터 (`WIN`, `LOSE`, `DRAW`) | ⬜️ |
+| `resultScore` | String | 경기 결과 필터 (`WIN`, `LOSE`, `DRAW`) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /journals/calendar
@@ -47,7 +47,7 @@ GET /journals/calendar?resultScore=WIN
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

@@ -4,17 +4,17 @@
 
 카카오 로그인 완료 후 리다이렉트되는 콜백 엔드포인트입니다. 인가 코드를 받아 JWT 토큰을 발급합니다. 신규 사용자인 경우 자동으로 회원가입이 진행됩니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /callback`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** 필요 없음
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -22,15 +22,15 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ⬜️ |
+| `Content-Type` | String | `application/json` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `code` | String | 카카오 OAuth 인가 코드 | ✅ |
+| `code` | String | 카카오 OAuth 인가 코드 | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /callback?code=카카오에서_발급받은_인가코드
@@ -42,7 +42,7 @@ GET /callback?code=카카오에서_발급받은_인가코드
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

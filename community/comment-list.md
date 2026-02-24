@@ -4,11 +4,11 @@
 
 게시글에 달린 댓글 목록을 조회합니다. 대댓글은 부모 댓글의 `replies` 배열에 포함됩니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /community/posts/{postId}/comments`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,7 +26,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -34,7 +34,7 @@
 | --- | --- | --- |
 | `postId` | Long | 댓글을 조회할 게시글 ID |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /community/posts/10/comments
@@ -46,7 +46,7 @@ GET /community/posts/10/comments
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

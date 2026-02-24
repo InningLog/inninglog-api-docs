@@ -4,11 +4,11 @@
 
 커뮤니티 홈 화면 정보를 조회합니다. 사용자의 응원팀 정보와 인기 게시글 2개를 반환합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /community/home`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,7 +26,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 별도의 Path Parameters, Query Parameters, Body가 필요하지 않습니다.
 
@@ -36,7 +36,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

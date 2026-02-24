@@ -4,11 +4,11 @@
 
 로그인한 사용자의 응원팀을 설정합니다. 최초 1회만 가능하며, 이후 변경할 수 없습니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `PATCH /member/setup`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,16 +26,16 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Body
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `teamShortCode` | String | 응원팀 숏코드 (예: `OB`, `LG`) | ✅ |
+| `teamShortCode` | String | 응원팀 숏코드 (예: `OB`, `LG`) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -49,7 +49,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

@@ -4,11 +4,11 @@
 
 새로운 직관일지를 작성합니다. 경기 정보, 점수, 감정 태그, 후기, 이미지를 포함할 수 있습니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `POST /journals/contents`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,25 +26,25 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Body
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `gameId` | String | 경기 고유 ID (예: `20250622OBLG0`) | ✅ |
-| `gameDate` | String | 경기 날짜 (`yyyy-MM-dd HH:mm`) | ✅ |
-| `stadiumSC` | String | 경기장 숏코드 (예: `JAM`) | ✅ |
-| `opponentTeamSC` | String | 상대팀 숏코드 (예: `OB`) | ✅ |
-| `ourScore` | int | 우리팀 점수 | ✅ |
-| `theirScore` | int | 상대팀 점수 | ✅ |
-| `fileName` | String | 업로드할 이미지 파일명 (확장자 포함) | ⬜️ |
-| `emotion` | String | 감정 태그 (`MOVED`, `THRILLED`, `FRUSTRATED`, `REGRETFUL`, `ANGRY`) | ✅ |
-| `review_text` | String | 후기글 | ⬜️ |
-| `isPublic` | boolean | 공개 여부 (기본값: `false`) | ⬜️ |
+| `gameId` | String | 경기 고유 ID (예: `20250622OBLG0`) | |
+| `gameDate` | String | 경기 날짜 (`yyyy-MM-dd HH:mm`) | |
+| `stadiumSC` | String | 경기장 숏코드 (예: `JAM`) | |
+| `opponentTeamSC` | String | 상대팀 숏코드 (예: `OB`) | |
+| `ourScore` | int | 우리팀 점수 | |
+| `theirScore` | int | 상대팀 점수 | |
+| `fileName` | String | 업로드할 이미지 파일명 (확장자 포함) | |
+| `emotion` | String | 감정 태그 (`MOVED`, `THRILLED`, `FRUSTRATED`, `REGRETFUL`, `ANGRY`) | |
+| `review_text` | String | 후기글 | |
+| `isPublic` | boolean | 공개 여부 (기본값: `false`) | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -67,7 +67,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

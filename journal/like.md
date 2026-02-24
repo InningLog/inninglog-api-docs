@@ -8,11 +8,11 @@
 
 ## 직관일지 좋아요
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `POST /journals/{journalId}/likes`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -22,7 +22,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -30,7 +30,7 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -38,7 +38,7 @@
 | --- | --- | --- |
 | `journalId` | Long | 좋아요할 직관일지 ID |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 POST /journals/42/likes
@@ -50,7 +50,7 @@ POST /journals/42/likes
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 
@@ -92,11 +92,11 @@ POST /journals/42/likes
 
 ## 직관일지 좋아요 취소
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `DELETE /journals/{journalId}/likes`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -106,7 +106,7 @@ POST /journals/42/likes
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -114,7 +114,7 @@ POST /journals/42/likes
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -122,7 +122,7 @@ POST /journals/42/likes
 | --- | --- | --- |
 | `journalId` | Long | 좋아요 취소할 직관일지 ID |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 DELETE /journals/42/likes
@@ -134,7 +134,7 @@ DELETE /journals/42/likes
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

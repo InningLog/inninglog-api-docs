@@ -4,11 +4,11 @@
 
 팀별 커뮤니티에 새로운 게시글을 작성합니다. 이미지를 첨부할 수 있습니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `POST /community/{teamSC}/posts/create`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,8 +26,8 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -39,14 +39,14 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `title` | String | 게시글 제목 | ✅ |
-| `content` | String | 게시글 본문 | ✅ |
-| `imageCreateReqDto` | Array | 첨부 이미지 리스트 | ⬜️ |
-| `imageCreateReqDto[].sequence` | int | 이미지 순서 | ✅ |
-| `imageCreateReqDto[].key` | String | 이미지 S3 경로 키 (예: `post/1/cat.jpeg`) | ✅ |
-| `imageCount` | Long | 전체 이미지 개수 | ⬜️ |
+| `title` | String | 게시글 제목 | |
+| `content` | String | 게시글 본문 | |
+| `imageCreateReqDto` | Array | 첨부 이미지 리스트 | |
+| `imageCreateReqDto[].sequence` | int | 이미지 순서 | |
+| `imageCreateReqDto[].key` | String | 이미지 S3 경로 키 (예: `post/1/cat.jpeg`) | |
+| `imageCount` | Long | 전체 이미지 개수 | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -72,7 +72,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

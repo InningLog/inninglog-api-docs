@@ -4,11 +4,11 @@
 
 게시글에 댓글을 작성합니다. 대댓글도 지원합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `POST /community/posts/{postId}/comments`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,8 +26,8 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Content-Type` | String | `application/json` | ✅ |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Content-Type` | String | `application/json` | |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Path Parameters
 
@@ -39,10 +39,10 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `rootCommentId` | Long | 상위 댓글 ID (대댓글인 경우, 일반 댓글이면 `null`) | ⬜️ |
-| `content` | String | 댓글 내용 | ✅ |
+| `rootCommentId` | Long | 상위 댓글 ID (대댓글인 경우, 일반 댓글이면 `null`) | |
+| `content` | String | 댓글 내용 | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```json
 {
@@ -57,7 +57,7 @@
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 

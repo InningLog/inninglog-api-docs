@@ -4,11 +4,11 @@
 
 본인의 직관일지를 모아보기 형태로 조회합니다. 페이지네이션과 경기 결과 필터링을 지원합니다.
 
-### 📌 엔드포인트
+### 엔드포인트
 
 `GET /journals/summary`
 
-### 🔐 인증
+### 인증
 
 - **인증 필요 여부:** JWT 인증 필요
 
@@ -18,7 +18,7 @@
 
 ---
 
-### ▶️ 요청 (Request)
+### 요청 (Request)
 
 <aside>
 
@@ -26,17 +26,17 @@
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `Authorization` | String | `Bearer {JWT_TOKEN}` | ✅ |
+| `Authorization` | String | `Bearer {JWT_TOKEN}` | |
 
 ### Query Parameters
 
 | Key | Type | 설명 | 필수 |
 | --- | --- | --- | --- |
-| `resultScore` | String | 경기 결과 필터 (`WIN`, `LOSE`, `DRAW`) | ⬜️ |
-| `page` | int | 페이지 번호 (0부터 시작) | ⬜️ |
-| `size` | int | 한 페이지 아이템 수 | ⬜️ |
+| `resultScore` | String | 경기 결과 필터 (`WIN`, `LOSE`, `DRAW`) | |
+| `page` | int | 페이지 번호 (0부터 시작) | |
+| `size` | int | 한 페이지 아이템 수 | |
 
-### ▶️ 요청 예시
+### 요청 예시
 
 ```
 GET /journals/summary?resultScore=WIN&page=0&size=10
@@ -48,7 +48,7 @@ GET /journals/summary?resultScore=WIN&page=0&size=10
 
 ---
 
-### ◀️ 응답 (Response)
+### 응답 (Response)
 
 <aside>
 
