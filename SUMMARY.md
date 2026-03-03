@@ -71,3 +71,19 @@
 ## 에러 코드 <a href="#error" id="error"></a>
 
 * [에러 코드 목록](error/README.md)
+
+<!-- AUTO-GENERATED-START -->
+
+## 직관일지
+
+* [인기 직관 일지 목록 조회](journal/get-journals-popular.md)
+
+## 회원
+
+* [회원 초기 설정 (닉네임 + 응원팀)](member/post-member-setup.md)
+
+## 좌석시야
+
+* [해시태그 기반 좌석 검색 (모아보기)](좌석시야/get-seatViews-hashtag-gallery.md)
+
+<!-- AUTO-GENERATED-END -->
